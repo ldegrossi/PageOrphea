@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
+
+* {margin: 0;
+padding: 0;}
+
+/* NAV */
+
+nav 
+{
+display: flex;
+flex-flow: row nowrap;
+justify-content:space-between;
+background-color: rgb(73, 73, 73);
+}
+
+.Buscar
+{
+ display: flex;
+ justify-content: center;
+ background-color: rgb(73, 73, 73);
+ font-family: 'Sofia Sans Extra Condensed', sans-serif;
+ color: white;
+ font-size: 30px;
+ font-weight: bold;
+}
+
+.nav1 
+{
+display:flex;
+flex-flow: row nowrap;
+justify-content:space-around;
+align-items: center;
+width: 500px;
+}
+
+.nav1 li 
+{
+display: flex;
+justify-content:space-around;
+font-weight: bold;
+font-size: 25px;  
+}
+
+.nav2 
+{
+display: flex;
+flex-flow: row nowrap;
+justify-content:space-around;
+align-items: center;
+width: 500px;
+}
+
+.nav2 li 
+{
+display: flex;
+justify-content:space-around;
+font-weight: bold;
+font-size: 25px;
+}
+
+.a_logo 
+{
+width: 250px;
+border-style:groove;
+border-color: rgb(151, 151, 151);
+}
+
+a
+{
+text-decoration: none;
+color: white;
+font-family: 'Sofia Sans Extra Condensed', sans-serif;
+font-size: 35px;
+}
+
+/* SECCION IMAGENES */
+
+h2 
+{
+text-align: center;
+font-family: 'Sofia Sans Extra Condensed', sans-serif;
+font-size: 45px;
+}
+
+#titulo
+{
+    text-align: center;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 50px;  
+    padding: 50px 0px 50px 0px;
+}
+.img_inicio article
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    background-color: brown;
+}
+
+.img_inicio1 img
+{
+   width: 400px;
+   height: 400px;
+}
+
+.img_inicio2 img
+{
+   width: 400px;
+   height: 400px;
+}
+
+#img_central
+{
+    position: absolute;
+    align-items: center;
+    left: 550px;
+    top: 575px;
+}
+
+/* SECCION MARCAS */
+
+.marcas_inicio
+{
+    display:flex;
+    position:static;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+}
+
+/* SECCION PROMOCIONES */
+
+.promociones_inicio li img 
+{    
+    width: 200px;
+    height: 200px;     
+}
+
+.promociones_inicio 
+{
+    display:flex;
+    position:static;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+}
+
+/* FOOTER */
+
+.section_footer
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;
+    background-color: rgb(79, 79, 79); 
+    color: white;
+    align-items: center;
+    padding: 20px 0px 20px 0px ;
+}
+
+
+#info_footer ul
+{
+    color: white;
+}
+
+#info_footer ul li
+{
+    list-style: none;
+}
+#boton_footer button
+{
+    width: 200px;
+    height: 40px;
+    font-size: medium;
+}
+
+#redes_footer ul
+{    
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:flex-end;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+#redes_footer ul img
+{
+    width: 60x;
+    height: 60px;
+}
+
+/* AYUDA */
+
+#main_form 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.imgTalles
+{
+    height: 450px;
+}
+
+/*PRODUCTOS*/
+
+#Productos img 
+{
+width: 200px;
+}
+
+.main_productos
+{
+    display:flex
+}
