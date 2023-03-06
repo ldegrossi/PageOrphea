@@ -33,24 +33,15 @@ font-size: 35px;
 
 /* SECCION MAIN */
 
-h2 
-{
-text-align: center;
-font-family: 'Sofia Sans Extra Condensed', sans-serif;
-font-size: 45px;
-}
-
-.h2_center
-{ text-align: left;
-}
-
 .main_section_title h1
 {
     text-align: center;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    padding: 50px 0px 50px 0px;
-    font-size: 50px;
     color: white;
+    font-weight: bold;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 70px;  
+    padding: 50px 0px 50px 0px;
+    background: rgba(117, 117, 117, 0.5);
 }
 
 .main_section_category img
@@ -118,7 +109,7 @@ font-size: 45px;
     height: 60px;
 }
 
-/* AYUDA */
+/* CONTACTO */
 
 .main_form 
 {
@@ -127,13 +118,57 @@ font-size: 45px;
     justify-content: space-around;
 }
 
-.imgTalles
+/* AYUDA */
+
+.Ayuda_FP
+{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.Ayuda_Talles
 {
     height: 450px;
 }
 
+.h2_general
+{
+    color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    background: rgba(117, 117, 117, 0.5);
+}
+.h3_general
+{
+    color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: rgba(117, 117, 117, 0.5);
+}
+
 /* NOSOTROS */
 
+.background_image
+{
+    background-image: url('../images/Background-Image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.font_general
+{   color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    background: rgba(117, 117, 117, 0.5);
+    margin-left: 100px;
+    margin-right: 100px;
+}
 /* PRODUCTOS */
 
 .Productos img 
