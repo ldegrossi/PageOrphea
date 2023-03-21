@@ -1,40 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
+*{padding: 0;
+margin: 0;}
 
 /* NAV */
 
-.header_nav 
-{
-display: flex;
-background-color: rgb(58, 58, 58);
+.header_nav {
+    display: flex;
+    background-color: rgb(58, 58, 58);
 }
 
 .header_nav_SearchBtn {
-background-color: rgb(74, 74, 74);
-border-style: groove;
-border-color: rgb(151, 151, 151);
-color: white;
-font-weight: bold;
+    background-color: rgb(74, 74, 74);
+    border-style: groove;
+    border-color: rgb(151, 151, 151);
+    color: white;
+    font-weight: bold;
 }
 
-.header_nav_logo 
-{
-width: 200px;
-border-style: groove;
-border-color: rgb(151, 151, 151);
+.header_nav_logo {
+    width: 200px;
+    border-style: groove;
+    border-color: rgb(151, 151, 151);
 }
 
-.header_nav a
-{
-color: white;
-font-family: 'Sofia Sans Extra Condensed', sans-serif;
-font-weight: bold;
-font-size: 35px;
+.header_nav a{
+    color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
 }
 
-/* SECCION MAIN */
+/* SECCION CATEGORIA */
+.main_section_category{
+    margin: 0 30px 0 30px;
+}
 
-.main_section_title h1
-{
+.main_section_category p{
+    font-size: 80px;
+    position: relative;
+    color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    filter: opacity(0);
+    bottom: 50%;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.main_section_category div{
+    padding: 0;
+}
+.main_section_category img{
+    width: 493.33px;
+    height: 350px;
+}
+
+/* SECCION MARCAS */
+
+.bg_transparent {
+    background: rgb(255, 255, 255, 0.7);
+}
+
+/* SECCION PROMOCIONES */
+
+.main_promociones {
+    padding-top: 30px;
+}
+
+.main_promociones img { 
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;     
+}
+
+/* FOOTER */
+    
+.footer{   display: flex;
+    justify-content: space-evenly;
+    background-color:  rgb(58, 58, 58); 
+    color: white;
+    align-items: center;
+    padding: 20px 0px 20px 0px ;
+}
+
+.footer_info ul{
+    color: white;
+    list-style: none;
+}
+
+.footer_button{
+    width: 200px;
+    height: 80px;
+    font-size: medium;
+}
+
+.footer_redes ul{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer_redes ul img{
+    width: 60px;
+    height: 60px;
+}
+
+/* CONTACTO */
+
+.main_form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+/* AYUDA */
+
+.Ayuda_FP{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Ayuda_Talles{       
+    border: solid 1px black;
+    width: 1000px;
+    height: 600px;
+}
+
+.Img_Talles {
+    display: flex; 
+    flex-flow: column wrap;
+    align-content: center;
+}
+.margin_ayuda{
+    margin: 0px 100px 0px 100px;
+}
+/* NOSOTROS */
+
+.div_nosotros {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 15px;
+}
+
+.div_nosotros img{
+    height: 400px;
+    width: 600px;
+    align-self: center;
+}
+/* PRODUCTOS */
+
+.Productos img {
+    width: 200px;
+}
+
+.form_productos{
+    display: inline-flex;
+    flex-flow: column nowrap;
+}
+
+/* GENERAL */
+
+a{
+    text-decoration: none;
+}
+
+.background_image{
+    background-image: url('../images/Background_Image.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.font_general{   
+    color: rgb(255, 255, 255);
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    background: rgba(117, 117, 117, 0.5);
+}
+
+h1{
     text-align: center;
     color: white;
     font-weight: bold;
@@ -43,140 +194,7 @@ font-size: 35px;
     padding: 50px 0px 50px 0px;
     background: rgba(117, 117, 117, 0.5);
 }
-
-.main_section_category img
-{
-   width: 300px;
-   height: 300px;
-}
-
-/* SECCION MARCAS */
-
-/* SECCION PROMOCIONES */
-
-.main_promociones img 
-{    
-    width: 200px;
-    height: 200px;     
-}
-
-.b_color {
-    background-color: brown;
-    padding-bottom: 50px;
-}
-
-/* FOOTER */
-    
-.footer
-{   display: flex;
-    justify-content: space-evenly;
-    background-color:  rgb(58, 58, 58); 
-    color: white;
-    align-items: center;
-    padding: 20px 0px 20px 0px ;
-}
-
-.footer_info h3
-{
-    text-align: center;
-}
-
-.footer_info ul
-{
-    color: white;
-    list-style: none;
-}
-
-.footer_button
-{
-    width: 200px;
-    height: 80px;
-    font-size: medium;
-}
-
-.footer_redes ul
-{    
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-}
-
-.footer_redes ul img
-{
-    width: 60px;
-    height: 60px;
-}
-
-/* CONTACTO */
-
-.main_form 
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-/* AYUDA */
-
-.Ayuda_FP
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.Ayuda_Talles
-{   
-    width: 550px;
-    height: 350px;
-}
-
-.Img_Talles 
-{
-    display: flex; 
-    flex-flow: row wrap;
-    justify-content: center;
-}
-/* NOSOTROS */
-
-/* PRODUCTOS */
-
-.Productos img 
-{
-    width: 200px;
-}
-
-.main_productos
-{
-    display:flex;
-}
-
-/* GENERAL */
-
-.background_image
-{
-    background-image: url('../images/Background-Image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;   
-}
-
-.font_general
-{   
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    background: rgba(117, 117, 117, 0.5);
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.h2_general
-{
+.h2_general{
     color: white;
     text-align: center;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -184,11 +202,187 @@ font-size: 35px;
     font-size: 60px;
     background: rgba(117, 117, 117, 0.5);
 }
-.h3_general
-{
+.h3_general{
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: bold;
     font-size: 45px;
     background: rgba(117, 117, 117, 0.5);
 }
+
+/* ANIMACIONES */
+
+.Img_Index:hover img {
+    transform:scale(1.1);transform:scale(1.1);transition: 400ms; filter: blur(3px);
+}
+
+.Img_Index:hover p{
+    filter: opacity(1);
+    transition: 400ms;
+}
+
+.Img_Marcas:hover img{
+    transform:scale(1.1);transform:scale(1.1);transition: 400ms;
+}
+
+.anim_entrada_der {
+	animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.anim_entrada_izq {
+	animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+/* MEDIA QUARE */
+@media (max-width: 1200px){
+    .main_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .div_nosotros img{
+        height: 250px;
+        width: 450px;
+        align-self: center;
+    }
+
+    .Ayuda_Talles {
+        width: 700px;
+        height: 550px;
+    } 
+
+    .font_general{   
+        color: rgb(255, 255, 255);
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+
+    h1{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-size: 60px;  
+        padding: 40px 0px 40px 0px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+
+    .h3_general{
+        color: white;
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        background: rgba(117, 117, 117, 0.5);
+        margin-left: 30px;
+    }
+
+    .h2_general{
+        color: white;
+        text-align: center;
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 45px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+
+}
+@media (max-width: 768px) {
+
+    .main_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .marcas_img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .div_nosotros {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        margin: 0px 25px 0px 25px;
+        padding-bottom: 15px;
+    }
+
+    .div_nosotros img{
+        height: 150px;
+        width: 250px;
+        align-self: center;
+    }
+
+    .contacto_map iframe{   
+        height: 350px;
+        width: 450px;
+    }
+
+    .Ayuda_FP {
+        width: 50vw;
+    }
+
+    .Ayuda_Talles {
+        width: 450px;
+        height: 350px;
+    }
+
+    h1{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-size: 45px;  
+        padding: 30px 0px 30px 0px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+
+    .h3_general{
+        color: white;
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+
+    .h2_general{
+        color: white;
+        text-align: center;
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 45px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+
+    .font_general{   
+        color: rgb(255, 255, 255);
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        background: rgba(117, 117, 117, 0.5);
+    }
+}
+
