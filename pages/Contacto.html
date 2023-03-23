@@ -43,41 +43,43 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Escribe..." aria-label="Search">
-                  <button class="header_nav_SearchBtn" type="submit">Buscar</button>
+                  <button class="header_nav_SearchBtn btn btn-outline-light" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
-    <main class="main_form background_image">
-        <section class="font_general">
-            <form action="#" method="post">
-                <h2 class="h2_general">Contacto</h2>
-                <div>
-                 <label for="nombre">Nombre y Apellido</label>              
-                 <input type="text" id="nombre" name="nombre">       
-                </div>      
-                <div>     
-                 <label for="email">Correo Electrónico</label>      
-                 <input type="email" id="email" name="email">      
-                </div>      
-                <div>    
-                 <label for="telefono">Teléfono</label>   
-                 <input type="tel" id="telefono" name="telefono">    
-                </div>   
-                <div>     
-                 <label for="comentario">Comentario</label> 
-                 <textarea id="comentario" name="comentario" cols="30" rows="3"></textarea>
-                </div> 
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">              
-               </form>
-        </section>
-        <aside class="font_general contacto_map">
-            <h2 class="h2_general">Sucursal</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6096614488906!2d-60.69175988477477!3d-31.617153913155523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9e593b0ff97%3A0x4d66e776f2ca1df1!2sMarcial%20Candioti%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1675649970807!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </aside>
+    <main>
+        <div class="contacto_form background_image">
+            <section class="font_general">
+                <form action="#" method="post">
+                    <h2 class="h2_general">Contacto</h2>
+                    <div>
+                    <label for="nombre">Nombre y Apellido</label>              
+                    <input type="text" id="nombre" name="nombre">       
+                    </div>      
+                    <div>     
+                    <label for="email">Correo Electrónico</label>      
+                    <input type="email" id="email" name="email">      
+                    </div>      
+                    <div>    
+                    <label for="telefono">Teléfono</label>   
+                    <input type="tel" id="telefono" name="telefono">    
+                    </div>   
+                    <div>     
+                    <label for="comentario">Comentario</label> 
+                    <textarea id="comentario" name="comentario" cols="30" rows="3"></textarea>
+                    </div> 
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">              
+                </form>
+            </section>
+            <aside class="font_general contacto_map">
+                <h2 class="h2_general">Sucursal</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6096614488906!2d-60.69175988477477!3d-31.617153913155523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9e593b0ff97%3A0x4d66e776f2ca1df1!2sMarcial%20Candioti%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1675649970807!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </aside>
+        </div>
     </main>
     <footer>
         <section class="footer row">
@@ -95,10 +97,10 @@
             </div>
             <div class="footer_redes col-xl-4 col-md-12">
                 <ul>
-                    <li><a href="#"><img src="../images/instagram_logo.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../images/facebook_logo.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../images/correo_logo.png" alt="Correo"></a></li>
-                    <li><a href="#"><img src="../images/wsp_logo.png" alt="Whatsapp"></a></li>
+                    <li><a href="#"><img src="../images/instagram_logo.png" alt="Instagram" class="btn_redes"></a></li>
+                    <li><a href="#"><img src="../images/facebook_logo.png" alt="Facebook" class="btn_redes"></a></li>
+                    <li><a href="#"><img src="../images/correo_logo.png" alt="Correo" class="btn_redes"></a></li>
+                    <li><a href="#"><img src="../images/wsp_logo.png" alt="Whatsapp" class="btn_redes"></a></li>
                 </ul>
             </div>
         </section>

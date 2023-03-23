@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 *{padding: 0;
 margin: 0;}
 
@@ -31,51 +32,72 @@ margin: 0;}
 }
 
 /* SECCION CATEGORIA */
-.main_section_category{
+.index_section_category{
     margin: 0 30px 0 30px;
 }
 
-.main_section_category p{
+.index_section_category p{
     font-size: 80px;
     position: relative;
     color: white;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: bold;
     filter: opacity(0);
+    left: 15%;
     bottom: 50%;
     text-align: center;
     text-shadow: 2px 2px 3px black;
 }
 
-.main_section_category div{
+.index_section_category div{
     padding: 0;
 }
-.main_section_category img{
+.index_section_category img{
     width: 493.33px;
     height: 350px;
 }
 
 /* SECCION MARCAS */
 
-.bg_transparent {
-    background: rgb(255, 255, 255, 0.7);
+.marcas_img{
+    width: 250px;
+    height: 250px;
+}
+
+.div_marcas{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /* SECCION PROMOCIONES */
 
-.main_promociones {
+.index_promociones {
+    text-align: center;
     padding-top: 30px;
 }
 
-.main_promociones img { 
+.index_promociones img { 
     border: solid 1px black;
     width: 200px;
-    height: 200px;     
+    height: 200px;
+}
+
+.promociones_card {
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+
+.promociones_card p {
+    font-size: 20px;
+} 
+.title-card {
+    font-weight: bold;
 }
 
 /* FOOTER */
     
-.footer{   display: flex;
+.footer {
+    display: flex;
     justify-content: space-evenly;
     background-color:  rgb(58, 58, 58); 
     color: white;
@@ -109,7 +131,7 @@ margin: 0;}
 
 /* CONTACTO */
 
-.main_form {
+.contacto_form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -157,10 +179,78 @@ margin: 0;}
 .Productos img {
     width: 200px;
 }
-
-.form_productos{
-    display: inline-flex;
+.div_productos {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.div_columna {
     flex-flow: column nowrap;
+    padding-left: 10px;
+}
+.div_columna input{
+    height: 15px;
+    width: 15px;
+}
+.btn_productos{
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    font-size: medium;
+}
+.aside_productos {
+    padding: 25px 25px 100px 25px;
+}
+.aside_productos img { 
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;     
+    
+}
+.checkbox-rect input[type="checkbox"] {
+    display: none;
+}
+.checkbox-rect input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    font: 35px/23px 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.checkbox-rect input[type="checkbox"]:hover + label:hover {
+    color: rgb(255, 184, 61);
+}
+.checkbox-rect input[type="checkbox"]:hover + label:before {
+    background: #50565a;
+    box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+.checkbox-rect input[type="checkbox"] + label:last-child {
+    margin-bottom: 5;
+}
+.checkbox-rect input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #343a3f;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #f3f3f3;
+}
+.checkbox-rect input[type="checkbox"]:checked + label:before {
+    width: 20px;
+    height: 20px;
+    border-radius: 0.2em;
+    border: 2px solid #fff;
+    transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: rgb(255, 162, 0);
+    box-shadow: 0 0 0 1px #000;
 }
 
 /* GENERAL */
@@ -169,6 +259,9 @@ a{
     text-decoration: none;
 }
 
+.bg_transparent {
+    background: rgb(255, 255, 255, 0.7);
+}
 .background_image{
     background-image: url('../images/Background_Image.webp');
     background-repeat: no-repeat;
@@ -181,6 +274,13 @@ a{
     color: rgb(255, 255, 255);
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: bold;
+    font-size: 35px;
+    background: rgba(117, 117, 117, 0.5);
+}
+
+.font_productos{   
+    color: rgb(255, 255, 255);
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 35px;
     background: rgba(117, 117, 117, 0.5);
 }
@@ -211,6 +311,34 @@ h1{
 }
 
 /* ANIMACIONES */
+
+.index_title {
+	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }  
+
+  .btn_redes:hover {
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 
 .Img_Index:hover img {
     transform:scale(1.1);transform:scale(1.1);transition: 400ms; filter: blur(3px);
@@ -252,9 +380,10 @@ h1{
       opacity: 1;
     }
   }
+
 /* MEDIA QUARE */
 @media (max-width: 1200px){
-    .main_form {
+    .contacto_form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;

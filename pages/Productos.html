@@ -43,64 +43,169 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Escribe..." aria-label="Search">
-                  <button class="header_nav_SearchBtn" type="submit">Buscar</button>
+                  <button class="header_nav_SearchBtn btn btn-outline-light" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
-    <main class="main_productos b_color background_image">
+    <main>
+        <div class="div_productos background_image">
         <section>
-            <form class="form_productos">
-                <fieldset class="productos_categoria">
-                <legend class="text-center">Categoria</legend>
-                    <input type="radio" value="Combate" name="Categoria">
-                    <label for="Combate">Combate</label>
-                    <input type="radio" value="Crossfit" name="Categoria">
-                    <label for="Crossfit">Crossfit</label>
-                    <input type="radio" value="Funcional" name="Categoria">
-                    <label for="Funcional">Funcional</label>
-                    <input type="radio" value="Musculación" name="Categoria">
-                    <label for="Musculacion">Musculacion</label>
-                    <input type="radio" value="Indumentaria" name="Categoria">
-                    <label for="Indumentaria">Indumentaria</label>
+            <form class="font_productos">
+                <fieldset>
+                <legend class="text-center h3_general">Categoria</legend>
+                    <div class="div_columna">
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Combate" name="Categoria" id="Combate">
+                            <label for="Combate">Combate</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Crossfit" name="Categoria" id="Crossfit">
+                            <label for="Crossfit">Crossfit</label>
+                        </div>
+                        <div class="checkbox-rect"> 
+                            <input type="checkbox" value="Funcional" name="Categoria" id="Funcional">
+                            <label for="Funcional">Funcional</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Musculación" name="Categoria" id="Musculacion">
+                            <label for="Musculacion">Musculacion</label>
+                        </div>
+                        <div class="checkbox-rect">  
+                            <input type="checkbox" value="Indumentaria" name="Categoria" id="Indumentaria">
+                            <label for="Indumentaria">Indumentaria</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Suplementos" name="Categoria" id="Suplementos">
+                            <label for="Suplementos">Suplementos</label>
+                        </div>
+                    </div>
                 </fieldset>
-                <Fieldset class="productos_filtrar">
-                    <legend class="text-center">Filtrar</legend>
-                    <input type="radio" value="MasVendidos" name="Filtrar">
-                    <label for="MasVendidos">Mas Vendidos</label>
-                    <input type="radio" value="MayorRelevancia" name="Filtrar">
-                    <label for="MayorRelevancia">Mayor Relevancia</label>
-                    <input type="radio" value="MenorCosto" name="Filtrar">
-                    <label for="MenorCosto">Menor Costo</label>
-                    <input type="radio" value="Promos" name="Filtrar">
-                    <label for="Promos">Promociones</label>
+                <Fieldset>
+                    <legend class="text-center h3_general">Filtrar</legend>
+                    <div class="div_columna">
+                        <div >     
+                            <input type="radio" value="MasVendidos" name="Filtrar" id="MasVendidos">
+                            <label for="MasVendidos">Mas Vendidos</label>                   
+                        </div>
+                        <div>
+                            <input type="radio" value="MayorRelevancia" name="Filtrar" id="MayorRelevancia">
+                            <label for="MayorRelevancia">Mayor Relevancia</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="MenorCosto" name="Filtrar" id="MenorCosto">
+                            <label for="MenorCosto">Menor Costo</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="Promos" name="Filtrar" id="Promos">
+                            <label for="Promos">Promociones</label>
+                        </div>
+                    </div>
                 </Fieldset>
-                <fieldset class="productos_marcas">
-                    <legend class="text-center">Marcas</legend>
-                    <input type="checkbox" value="Adidas">
-                    <label for="Adidas">Adidas</label>
-                    <input type="checkbox" value="Nike">
-                    <label for="Nike">Nike</label>
-                    <input type="checkbox" value="Puma">
-                    <label for="Puma">Puma</label>
-                    <input type="checkbox" value="Reebok">
-                    <label for="Reebok">Reebok</label>
-                    <input type="checkbox" value="Everlast">
-                    <label for="Everlast">Everlast</label>
-                    <input type="checkbox" value="UnderAmour">
-                    <label for="UnderAmour">Under Amour</label>
+                <fieldset>
+                    <legend class="text-center h3_general">Marcas</legend>
+                    <div class="div_columna">
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Adidas" id="Adidas">
+                            <label for="Adidas">Adidas</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Nike" id="Nike">
+                            <label for="Nike">Nike</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Puma" id="Puma">
+                            <label for="Puma">Puma</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Reebok" id="Reebok">
+                            <label for="Reebok">Reebok</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="Everlast" id="Everlast">
+                            <label for="Everlast">Everlast</label>
+                        </div>
+                        <div class="checkbox-rect">
+                            <input type="checkbox" value="UnderAmour" id="UnderAmour">
+                            <label for="UnderAmour">Under Amour</label>
+                        </div>
+                    </div>
                 </fieldset>
-                <input type="button" value="Buscar">
+                <div class="btn_productos">
+                    <button type="button" class="btn btn-outline-light">Buscar</button>
+                </div>
             </form>
         </section>
-        <aside class="Productos">
-            <img src="../images/Producto.webp" alt="producto">
-            <img src="../images/Producto.webp" alt="producto">
-            <img src="../images/Producto.webp" alt="producto">
-            <img src="../images/Producto.webp" alt="producto">
-            <img src="../images/Producto.webp" alt="producto">
+        <aside class="bg_transparent">
+            <div class="row text-center aside_productos">
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6">
+                    <a href="#"><img src="../images/Producto.webp" alt="Productos"></a>
+                    <div class="promociones_card">
+                        <h4 class="title-card">Guantes de boxeo</h4>
+                        <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
+                        <a href="#" class="btn btn-success">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
         </aside>
+        </div>
     </main>
     <footer>
         <section class="footer row">
@@ -118,10 +223,10 @@
             </div>
             <div class="footer_redes col-xl-4 col-md-12">
                 <ul>
-                    <li><a href="#"><img src="../images/instagram_logo.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../images/facebook_logo.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../images/correo_logo.png" alt="Correo"></a></li>
-                    <li><a href="#"><img src="../images/wsp_logo.png" alt="Whatsapp"></a></li>
+                    <li><a href="#"><img src="../images/instagram_logo.png" alt="Instagram" class="btn_redes"></a></li>
+                    <li><a href="#"><img src="../images/facebook_logo.png" alt="Facebook" class="btn_redes"></a></li>
+                    <li><a href="#"><img src="../images/correo_logo.png" alt="Correo" class="btn_redes"></a></li>
+                    <li><a href="#"><img src="../images/wsp_logo.png" alt="Whatsapp" class="btn_redes"></a></li>
                 </ul>
             </div>
         </section>
