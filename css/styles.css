@@ -1,335 +1,325 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-*{padding: 0;
-margin: 0;}
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
 
 /* NAV */
-
 .header_nav {
-    display: flex;
-    background-color: rgb(58, 58, 58);
+  display: flex;
+  background-color: rgb(58, 58, 58);
 }
-
-.header_nav_SearchBtn {
-    background-color: rgb(74, 74, 74);
-    border-style: groove;
-    border-color: rgb(151, 151, 151);
-    color: white;
-    font-weight: bold;
+.header_nav a {
+  color: white;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
 }
-
-.header_nav_logo {
-    width: 200px;
-    border-style: groove;
-    border-color: rgb(151, 151, 151);
+.header_nav .header_nav_SearchBtn {
+  background-color: rgb(74, 74, 74);
+  border-style: groove;
+  border-color: rgb(151, 151, 151);
+  color: white;
+  font-weight: bold;
 }
-
-.header_nav a{
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
+.header_nav .header_nav_logo {
+  width: 200px;
+  border-style: groove;
+  border-color: rgb(151, 151, 151);
 }
 
 /* SECCION CATEGORIA */
-.index_section_category{
-    margin: 0 30px 0 30px;
+.index_section_category {
+  margin: 0 30px 0 30px;
 }
-
-.index_section_category p{
-    font-size: 80px;
-    position: relative;
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    filter: opacity(0);
-    left: 15%;
-    bottom: 50%;
-    text-align: center;
-    text-shadow: 2px 2px 3px black;
+.index_section_category p {
+  font-size: 80px;
+  position: relative;
+  color: white;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  filter: opacity(0);
+  left: 15%;
+  bottom: 50%;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
 }
-
-.index_section_category div{
-    padding: 0;
+.index_section_category div {
+  padding: 0;
 }
-.index_section_category img{
-    width: 493.33px;
-    height: 350px;
+.index_section_category img {
+  width: 493.33px;
+  height: 350px;
 }
 
 /* SECCION MARCAS */
-
-.marcas_img{
-    width: 250px;
-    height: 250px;
+.marcas_img {
+  width: 250px;
+  height: 250px;
 }
-
-.div_marcas{
-    display: flex;
-    flex-flow: row wrap;
+.marcas_img .div_marcas {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* SECCION PROMOCIONES */
-
 .index_promociones {
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
-
-.index_promociones img { 
-    border: solid 1px black;
-    width: 200px;
-    height: 200px;
+.index_promociones img {
+  border: solid 1px black;
+  width: 200px;
+  height: 200px;
 }
 
 .promociones_card {
-    margin-bottom: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-} 
-
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
 .promociones_card p {
-    font-size: 20px;
-} 
+  font-size: 20px;
+}
+
 .title-card {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* FOOTER */
-    
 .footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-color:  rgb(58, 58, 58); 
-    color: white;
-    align-items: center;
-    padding: 20px 0px 20px 0px ;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+.footer .footer_info ul {
+  color: white;
+  list-style: none;
+}
+.footer .footer_button {
+  width: 200px;
+  height: 80px;
+  font-size: medium;
+}
+.footer .footer_redes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+.footer .footer_redes ul img {
+  width: 60px;
+  height: 60px;
 }
 
-.footer_info ul{
-    color: white;
-    list-style: none;
-}
-
-.footer_button{
-    width: 200px;
-    height: 80px;
-    font-size: medium;
-}
-
-.footer_redes ul{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-}
-
-.footer_redes ul img{
-    width: 60px;
-    height: 60px;
+.footer_info ul {
+  color: white;
+  list-style: none;
 }
 
 /* CONTACTO */
-
 .contacto_form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
 }
 
 /* AYUDA */
-
-.Ayuda_FP{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.margin_ayuda {
+  margin: 0px 100px 0px 100px;
+}
+.margin_ayuda .Ayuda_FP {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.margin_ayuda .Img_Talles {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.margin_ayuda .Img_Talles .Ayuda_Talles {
+  border: solid 1px black;
+  width: 1000px;
+  height: 600px;
 }
 
-.Ayuda_Talles{       
-    border: solid 1px black;
-    width: 1000px;
-    height: 600px;
-}
-
-.Img_Talles {
-    display: flex; 
-    flex-flow: column wrap;
-    align-content: center;
-}
-.margin_ayuda{
-    margin: 0px 100px 0px 100px;
-}
 /* NOSOTROS */
-
 .div_nosotros {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 25px 0px 25px;
-    padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 25px 0px 25px;
+  padding-bottom: 15px;
+}
+.div_nosotros img {
+  height: 400px;
+  width: 600px;
+  align-self: center;
 }
 
-.div_nosotros img{
-    height: 400px;
-    width: 600px;
-    align-self: center;
-}
 /* PRODUCTOS */
-
 .Productos img {
-    width: 200px;
+  width: 200px;
 }
+
 .div_productos {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
-.div_columna {
-    flex-flow: column nowrap;
-    padding-left: 10px;
+.div_productos .font_productos {
+  color: rgb(255, 255, 255);
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 35px;
+  background: rgba(117, 117, 117, 0.5);
 }
-.div_columna input{
-    height: 15px;
-    width: 15px;
+.div_productos .div_columna {
+  flex-flow: column nowrap;
+  padding-left: 10px;
 }
-.btn_productos{
-    text-align: center;
-    width: 200px;
-    height: 80px;
-    font-size: medium;
+.div_productos .div_columna input {
+  height: 15px;
+  width: 15px;
 }
-.aside_productos {
-    padding: 25px 25px 100px 25px;
+.div_productos .btn_productos {
+  text-align: center;
+  width: 200px;
+  height: 80px;
+  font-size: medium;
 }
-.aside_productos img { 
-    border: solid 1px black;
-    width: 200px;
-    height: 200px;     
-    
+.div_productos .aside_productos {
+  text-align: center;
+  padding: 25px 25px 100px 25px;
 }
-.checkbox-rect input[type="checkbox"] {
-    display: none;
+.div_productos .aside_productos img {
+  border: solid 1px black;
+  width: 200px;
+  height: 200px;
 }
-.checkbox-rect input[type="checkbox"] + label {
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 20px;
-    font: 35px/23px 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
+.div_productos .checkbox-rect input[type=checkbox] {
+  display: none;
 }
-.checkbox-rect input[type="checkbox"]:hover + label:hover {
-    color: rgb(255, 184, 61);
+.div_productos .checkbox-rect input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font: 35px/23px "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
-.checkbox-rect input[type="checkbox"]:hover + label:before {
-    background: #50565a;
-    box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+.div_productos .checkbox-rect input[type=checkbox]:hover + label:hover {
+  color: rgb(255, 184, 61);
 }
-.checkbox-rect input[type="checkbox"] + label:last-child {
-    margin-bottom: 5;
+.div_productos .checkbox-rect input[type=checkbox]:hover + label:before {
+  background: #50565a;
+  box-shadow: inset 0px 0px 0px 2px #f7f2f2;
 }
-.checkbox-rect input[type="checkbox"] + label:before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #343a3f;
-    border-radius: 0.2em;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all 0.2s, background 0.2s ease-in-out;
-    transition: all 0.2s, background 0.2s ease-in-out;
-    background: #f3f3f3;
+.div_productos .checkbox-rect input[type=checkbox] + label:last-child {
+  margin-bottom: 5;
 }
-.checkbox-rect input[type="checkbox"]:checked + label:before {
-    width: 20px;
-    height: 20px;
-    border-radius: 0.2em;
-    border: 2px solid #fff;
-    transform: rotate(90deg);
-    transform: rotate(90deg);
-    background: rgb(255, 162, 0);
-    box-shadow: 0 0 0 1px #000;
+.div_productos .checkbox-rect input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  background: #f3f3f3;
+}
+.div_productos .checkbox-rect input[type=checkbox]:checked + label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 0.2em;
+  border: 2px solid #fff;
+  transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: rgb(255, 162, 0);
+  box-shadow: 0 0 0 1px #000;
 }
 
 /* GENERAL */
-
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .bg_transparent {
-    background: rgb(255, 255, 255, 0.7);
-}
-.background_image{
-    background-image: url('../images/Background_Image.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;   
+  background: rgba(255, 255, 255, 0.7);
 }
 
-.font_general{   
-    color: rgb(255, 255, 255);
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    background: rgba(117, 117, 117, 0.5);
+.background_image {
+  background-image: url("../images/Background_Image.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.font_productos{   
-    color: rgb(255, 255, 255);
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 35px;
-    background: rgba(117, 117, 117, 0.5);
+.font_general {
+  color: rgb(255, 255, 255);
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  background: rgba(117, 117, 117, 0.5);
 }
 
-h1{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 70px;  
-    padding: 50px 0px 50px 0px;
-    background: rgba(117, 117, 117, 0.5);
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 70px;
+  padding: 50px 0px 50px 0px;
+  background: rgba(117, 117, 117, 0.5);
 }
-.h2_general{
-    color: white;
-    text-align: center;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    background: rgba(117, 117, 117, 0.5);
+
+.h2_general {
+  color: white;
+  text-align: center;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  background: rgba(117, 117, 117, 0.5);
 }
-.h3_general{
-    color: white;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 45px;
-    background: rgba(117, 117, 117, 0.5);
+
+.h3_general {
+  text-align: center;
+  color: white;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+  background: rgba(117, 117, 117, 0.5);
 }
 
 /* ANIMACIONES */
-
 .index_title {
-	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-@keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }  
 
-  .btn_redes:hover {
-	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
+.btn_redes:hover {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 @keyframes scale-up-center {
   0% {
     transform: scale(1);
@@ -338,24 +328,27 @@ h1{
     transform: scale(1.1);
   }
 }
-
-
 .Img_Index:hover img {
-    transform:scale(1.1);transform:scale(1.1);transition: 400ms; filter: blur(3px);
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 400ms;
+  filter: blur(3px);
+}
+.Img_Index:hover p {
+  filter: opacity(1);
+  transition: 400ms;
 }
 
-.Img_Index:hover p{
-    filter: opacity(1);
-    transition: 400ms;
-}
-
-.Img_Marcas:hover img{
-    transform:scale(1.1);transform:scale(1.1);transition: 400ms;
+.Img_Marcas:hover img {
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 400ms;
 }
 
 .anim_entrada_der {
-	animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 @keyframes slide-in-right {
   0% {
     transform: translateX(1000px);
@@ -366,152 +359,134 @@ h1{
     opacity: 1;
   }
 }
-
 .anim_entrada_izq {
-	animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 @keyframes slide-in-left {
-    0% {
-      transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* MEDIA QUARE */
-@media (max-width: 1200px){
-    .contacto_form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .div_nosotros img{
-        height: 250px;
-        width: 450px;
-        align-self: center;
-    }
-
-    .Ayuda_Talles {
-        width: 700px;
-        height: 550px;
-    } 
-
-    .font_general{   
-        color: rgb(255, 255, 255);
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        background: rgba(117, 117, 117, 0.5);
-    }
-
-    h1{
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-size: 60px;  
-        padding: 40px 0px 40px 0px;
-        background: rgba(117, 117, 117, 0.5);
-    }
-
-    .h3_general{
-        color: white;
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-weight: bold;
-        font-size: 35px;
-        background: rgba(117, 117, 117, 0.5);
-        margin-left: 30px;
-    }
-
-    .h2_general{
-        color: white;
-        text-align: center;
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-weight: bold;
-        font-size: 45px;
-        background: rgba(117, 117, 117, 0.5);
-    }
-
+@media (max-width: 1200px) {
+  .contacto_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .div_nosotros img {
+    height: 250px;
+    width: 450px;
+    align-self: center;
+  }
+  .Ayuda_Talles {
+    width: 700px;
+    height: 550px;
+  }
+  .font_general {
+    color: rgb(255, 255, 255);
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background: rgba(117, 117, 117, 0.5);
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-size: 60px;
+    padding: 40px 0px 40px 0px;
+    background: rgba(117, 117, 117, 0.5);
+  }
+  .h3_general {
+    color: white;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    background: rgba(117, 117, 117, 0.5);
+    margin-left: 30px;
+  }
+  .h2_general {
+    color: white;
+    text-align: center;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: rgba(117, 117, 117, 0.5);
+  }
 }
 @media (max-width: 768px) {
-
-    .main_form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: auto;
-    }
-
-    .marcas_img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .div_nosotros {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-around;
-        margin: 0px 25px 0px 25px;
-        padding-bottom: 15px;
-    }
-
-    .div_nosotros img{
-        height: 150px;
-        width: 250px;
-        align-self: center;
-    }
-
-    .contacto_map iframe{   
-        height: 350px;
-        width: 450px;
-    }
-
-    .Ayuda_FP {
-        width: 50vw;
-    }
-
-    .Ayuda_Talles {
-        width: 450px;
-        height: 350px;
-    }
-
-    h1{
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-size: 45px;  
-        padding: 30px 0px 30px 0px;
-        background: rgba(117, 117, 117, 0.5);
-    }
-
-    .h3_general{
-        color: white;
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        background: rgba(117, 117, 117, 0.5);
-    }
-
-    .h2_general{
-        color: white;
-        text-align: center;
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-weight: bold;
-        font-size: 45px;
-        background: rgba(117, 117, 117, 0.5);
-    }
-
-    .font_general{   
-        color: rgb(255, 255, 255);
-        font-family: 'Sofia Sans Extra Condensed', sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        background: rgba(117, 117, 117, 0.5);
-    }
+  .main_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .marcas_img {
+    width: 200px;
+    height: 200px;
+  }
+  .div_nosotros {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 15px;
+  }
+  .div_nosotros img {
+    height: 150px;
+    width: 250px;
+    align-self: center;
+  }
+  .contacto_map iframe {
+    height: 350px;
+    width: 450px;
+  }
+  .Ayuda_FP {
+    width: 50vw;
+  }
+  .Ayuda_Talles {
+    width: 450px;
+    height: 350px;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-size: 45px;
+    padding: 30px 0px 30px 0px;
+    background: rgba(117, 117, 117, 0.5);
+  }
+  .h3_general {
+    color: white;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background: rgba(117, 117, 117, 0.5);
+  }
+  .h2_general {
+    color: white;
+    text-align: center;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: rgba(117, 117, 117, 0.5);
+  }
+  .font_general {
+    color: rgb(255, 255, 255);
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(117, 117, 117, 0.5);
+  }
 }
 
+/*# sourceMappingURL=styles.css.map */
