@@ -27,8 +27,35 @@ margin: 0;}
       border-color: rgb(151, 151, 151);
    }
 }
+/*  HEADER COMPRAS */
 
-/* SECCION CATEGORIA */
+.header_compras{
+   display: flex;
+   flex-flow: column nowrap;
+   background-color: rgb(58, 58, 58);
+   .div_compra_1 {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      img {
+         margin: 1rem 3rem 1rem 3rem;
+         width: 75px;
+         height: 75px;
+      }
+      p{
+         color: white;
+         font-family: 'Sofia Sans Extra Condensed', sans-serif;
+         font-size: 35px;
+         margin: 0;
+      }
+      .btn_cancelar{
+         justify-content: end;
+         
+      }
+   }
+}
+
+/* INDEX CATEGORIA */
 
 .index_section_category{
    margin: 0 30px 0 30px;
@@ -39,7 +66,6 @@ margin: 0;}
       font-family: 'Sofia Sans Extra Condensed', sans-serif;
       font-weight: bold;
       filter: opacity(0);
-      left: 15%;
       bottom: 50%;
       text-align: center;
       text-shadow: 2px 2px 3px black;
@@ -53,7 +79,7 @@ margin: 0;}
    }
 }
 
-/* SECCION MARCAS */
+/* INDEX MARCAS */
 
 .marcas_img{
    width: 250px;
@@ -65,7 +91,7 @@ margin: 0;}
 }
 
 
-/* SECCION PROMOCIONES */
+/* INDEX PROMOCIONES */
 
 .index_promociones {
    text-align: center;
