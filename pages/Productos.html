@@ -37,9 +37,6 @@
                     <li class="header_nav_PagesBtn">
                         <a class="nav-link" href="./Ayuda.html">Ayuda</a>
                     </li>
-                    <li class="header_nav_PagesBtn">
-                        <a class="nav-link" href="./Mi Carro.html">Mi carro</a>
-                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Escribe..." aria-label="Search">
@@ -47,93 +44,244 @@
                 </form>
               </div>
             </div>
+            <div class="modal fade FontCompras" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content bgCompras">
+                        <div class="modal-header">
+                            <h2 class="modal-title Form_Title" id="staticBackdropLabel">Finalizar la Compra:</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- formulario -->
+                            <form class="form-horizontal">
+                                <div class="FormCompras">
+                                    <fieldset>
+                                    <legend class="FontCompras_Subtitles">Datos Personales</legend>
+                                    <!-- Nombre-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="textinput">Nombre</label>  
+                                        <div class="col-md-4">
+                                            <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Apellido-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="textinput">Apellido</label>  
+                                        <div class="col-md-4">
+                                            <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- DNI-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="DNI">DNI</label>  
+                                        <div class="col-md-2">
+                                            <input id="DNI" name="DNI" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Teléfono -->
+                                    <div class="form-group FormCompras">
+                                        <label class="col-md-2 control-label" for="selectbasic">Teléfono</label>
+                                        <div class="col-md-4">
+                                            <select id="selectbasic" name="selectbasic" class="form-control">
+                                                <option value="TelefonoFijo">Teléfono Fijo</option>
+                                                <option value="Movil">Móvil</option>
+                                            </select>
+                                        </div>
+                                        <label class="col-md-2 control-label" for="NumeroTelefono">Número</label>  
+                                        <div class="col-md-3">
+                                            <input id="NumeroTelefono" name="NumeroTelefono" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <legend class="FontCompras_Subtitles">Envio</legend>
+                                    <!-- Código Postal-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="CodigoPostal">Código Postal</label>  
+                                        <div class="col-md-2">
+                                            <input id="CodigoPostal" name="CodigoPostal" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Dirección-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="Direccion">Direccion</label>  
+                                        <div class="col-md-3">
+                                            <input id="Direccion" name="Direccion" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <legend class="FontCompras_Subtitles">Forma de Pago</legend>
+                                    <!-- Tarjeta -->
+                                    <div class="form-group div_tarjetas">
+                                        <label class="col-md-3 control-label" for="Tarjeta">Tarjeta</label>
+                                        <div class="col-md-8"> 
+                                            <label class="radio-inline" for="Tarjeta-0">
+                                                <input type="radio" name="Tarjeta" id="Tarjeta-0" value="Visa" checked="checked">
+                                                Visa
+                                            </label> 
+                                            <label class="radio-inline" for="Tarjeta-1">
+                                                <input type="radio" name="Tarjeta" id="Tarjeta-1" value="Master Card">
+                                                Master Card
+                                            </label> 
+                                            <label class="radio-inline" for="Tarjeta-2">
+                                                <input type="radio" name="Tarjeta" id="Tarjeta-2" value="Maestro">
+                                                Maestro
+                                            </label> 
+                                            <label class="radio-inline" for="Tarjeta-3">
+                                                <input type="radio" name="Tarjeta" id="Tarjeta-3" value="American Express">
+                                                American Express
+                                            </label> 
+                                            <label class="radio-inline" for="Tarjeta-4">
+                                                <input type="radio" name="Tarjeta" id="Tarjeta-4" value="Cabal">
+                                                Cabal
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Numero de Tarjeta-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="NumeroTarjeta">Número</label>  
+                                        <div class="col-md-4">
+                                            <input id="NumeroTarjeta" name="NumeroTarjeta" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Forma de Pago -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="Cuotas">Forma de Pago</label>
+                                        <div class="col-md-4">
+                                            <select id="Cuotas" name="Cuotas" class="form-control">
+                                                <option value="1">Total</option>
+                                                <option value="3">3 cuotas</option>
+                                                <option value="6">6 cuotas</option>
+                                                <option value="9">9 Cuotas</option>
+                                                <option value="12">12 Cuotas</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Nombre y Apellido del Titular-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="NombreTarjeta">Nombre y Apellido de Titular</label>  
+                                        <div class="col-md-4">
+                                            <input id="NombreTarjeta" name="NombreTarjeta" type="text" placeholder="" class="form-control input-md" required=""> 
+                                        </div>
+                                    </div>
+                                    <!-- Fecha de Vencimiento-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="FechaVencimiento">Fecha de Vencimiento</label>  
+                                        <div class="col-md-3">
+                                            <input id="FechaVencimiento" name="FechaVencimiento" type="text" placeholder="mm/yy" class="form-control input-md" required=""> 
+                                        </div>
+                                    </div>
+                                    <!-- Código de Seguridad-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="Codigo">Código de Seguridad</label>  
+                                        <div class="col-md-2">
+                                            <input id="Codigo" name="Codigo" type="text" placeholder="***" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- DNI del Titular-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="DNITarjeta">DNI de Titular</label>  
+                                        <div class="col-md-2">
+                                            <input id="DNITarjeta" name="DNITarjeta" type="text" placeholder="" class="form-control input-md" required="">  
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>  
+                            <!-- Fin del formulario -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary Font_btn" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary Font_btn" data-bs-dismiss="modal">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </nav>
     </header>
     <main>
         <div class="div_productos background_image">
             <section>
-                <form class="font_productos">
-                    <fieldset>
-                    <legend class="h3_general">Categoria</legend>
-                        <div class="div_columna">
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Combate" name="Categoria" id="Combate">
-                                <label for="Combate">Combate</label>
+                <form>
+                    <div class="font_productos">
+                        <fieldset>
+                            <legend class="h3_general">Categoria</legend>
+                            <div class="div_columna">
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Combate" name="Categoria" id="Combate">
+                                    <label for="Combate">Combate</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Crossfit" name="Categoria" id="Crossfit">
+                                    <label for="Crossfit">Crossfit</label>
+                                </div>
+                                <div class="checkbox-rect"> 
+                                    <input type="checkbox" value="Funcional" name="Categoria" id="Funcional">
+                                    <label for="Funcional">Funcional</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Musculación" name="Categoria" id="Musculacion">
+                                    <label for="Musculacion">Musculacion</label>
+                                </div>
+                                <div class="checkbox-rect">  
+                                    <input type="checkbox" value="Indumentaria" name="Categoria" id="Indumentaria">
+                                    <label for="Indumentaria">Indumentaria</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Suplementos" name="Categoria" id="Suplementos">
+                                    <label for="Suplementos">Suplementos</label>
+                                </div>
                             </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Crossfit" name="Categoria" id="Crossfit">
-                                <label for="Crossfit">Crossfit</label>
+                        </fieldset>
+                        <Fieldset>
+                            <legend class="h3_general">Filtrar</legend>
+                            <div class="div_columna">
+                                <div >     
+                                    <input type="radio" value="MasVendidos" name="Filtrar" id="MasVendidos">
+                                    <label for="MasVendidos">Mas Vendidos</label>                   
+                                </div>
+                                <div>
+                                    <input type="radio" value="MayorRelevancia" name="Filtrar" id="MayorRelevancia">
+                                    <label for="MayorRelevancia">Mayor Relevancia</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="MenorCosto" name="Filtrar" id="MenorCosto">
+                                    <label for="MenorCosto">Menor Costo</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="Promos" name="Filtrar" id="Promos">
+                                    <label for="Promos">Promociones</label>
+                                </div>
                             </div>
-                            <div class="checkbox-rect"> 
-                                <input type="checkbox" value="Funcional" name="Categoria" id="Funcional">
-                                <label for="Funcional">Funcional</label>
+                        </Fieldset>
+                        <fieldset>
+                            <legend class="h3_general">Marcas</legend>
+                            <div class="div_columna">
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Adidas" id="Adidas">
+                                    <label for="Adidas">Adidas</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Nike" id="Nike">
+                                    <label for="Nike">Nike</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Puma" id="Puma">
+                                    <label for="Puma">Puma</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Reebok" id="Reebok">
+                                    <label for="Reebok">Reebok</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="Everlast" id="Everlast">
+                                    <label for="Everlast">Everlast</label>
+                                </div>
+                                <div class="checkbox-rect">
+                                    <input type="checkbox" value="UnderAmour" id="UnderAmour">
+                                    <label for="UnderAmour">Under Amour</label>
+                                </div>
                             </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Musculación" name="Categoria" id="Musculacion">
-                                <label for="Musculacion">Musculacion</label>
-                            </div>
-                            <div class="checkbox-rect">  
-                                <input type="checkbox" value="Indumentaria" name="Categoria" id="Indumentaria">
-                                <label for="Indumentaria">Indumentaria</label>
-                            </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Suplementos" name="Categoria" id="Suplementos">
-                                <label for="Suplementos">Suplementos</label>
-                            </div>
+                        </fieldset>
+                        <div class="btn_productos">
+                            <button type="button" class="btn btn-outline-light">Buscar</button>
                         </div>
-                    </fieldset>
-                    <Fieldset>
-                        <legend class="h3_general">Filtrar</legend>
-                        <div class="div_columna">
-                            <div >     
-                                <input type="radio" value="MasVendidos" name="Filtrar" id="MasVendidos">
-                                <label for="MasVendidos">Mas Vendidos</label>                   
-                            </div>
-                            <div>
-                                <input type="radio" value="MayorRelevancia" name="Filtrar" id="MayorRelevancia">
-                                <label for="MayorRelevancia">Mayor Relevancia</label>
-                            </div>
-                            <div>
-                                <input type="radio" value="MenorCosto" name="Filtrar" id="MenorCosto">
-                                <label for="MenorCosto">Menor Costo</label>
-                            </div>
-                            <div>
-                                <input type="radio" value="Promos" name="Filtrar" id="Promos">
-                                <label for="Promos">Promociones</label>
-                            </div>
-                        </div>
-                    </Fieldset>
-                    <fieldset>
-                        <legend class="h3_general">Marcas</legend>
-                        <div class="div_columna">
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Adidas" id="Adidas">
-                                <label for="Adidas">Adidas</label>
-                            </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Nike" id="Nike">
-                                <label for="Nike">Nike</label>
-                            </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Puma" id="Puma">
-                                <label for="Puma">Puma</label>
-                            </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Reebok" id="Reebok">
-                                <label for="Reebok">Reebok</label>
-                            </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="Everlast" id="Everlast">
-                                <label for="Everlast">Everlast</label>
-                            </div>
-                            <div class="checkbox-rect">
-                                <input type="checkbox" value="UnderAmour" id="UnderAmour">
-                                <label for="UnderAmour">Under Amour</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="btn_productos">
-                        <button type="button" class="btn btn-outline-light">Buscar</button>
                     </div>
                 </form>
             </section>
@@ -144,7 +292,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -152,7 +300,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -160,7 +308,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -168,7 +316,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -176,7 +324,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -184,7 +332,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -192,7 +340,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-6">
@@ -200,7 +348,7 @@
                         <div class="promociones_card">
                             <h4 class="title-card">Guantes de boxeo</h4>
                             <p>Guantes de boxeo dribbling clásico 14 onzas - Unisex</p>
-                            <a href="#" class="btn btn-success">COMPRAR</a>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +367,83 @@
                 </ul>
             </div>
             <div class="footer_button col-xl-4 col-md-6">
-                <button type="button" class="btn btn-outline-light">Boton de Arrepentimiento</button>
+                <button type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Boton de Arrepentimiento</button>
+                <!-- Modal -->
+                <div class="modal fade FontCompras" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content bgCompras">
+                            <div class="modal-header">
+                                <h2 class="modal-title Form_Title" id="staticBackdropLabel">Botón de Arrepentimiento</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- formulario -->
+                                <legend class="FontCompras_Subtitles">Derecho de Arrepentimiento</legend>
+                                <p>Ley 24.240. Código Civil y Comercial de la República Argentina. El consumidor tiene derecho a revocar la presente operación comercial (por adquisición de cosas y/o prestación de servicios) durante el plazo de DIEZ (10) días corridos, contados a partir de la fecha en que se entregue la cosa o se celebre el contrato, lo último que ocurra, sin responsabilidad alguna. Esta facultad no puede ser dispensada ni renunciada. El consumidor comunicará fehacientemente dicha revocación al proveedor y pondrá la cosa a su disposición. Los gastos de devolución son por cuenta del proveedor. Para ejercer el derecho de revocación el consumidor deberá poner la cosa a disposición del vendedor sin haberla usado y manteniéndola en el mismo estado en que la recibió, debiendo restituir el proveedor al consumidor los importes recibidos</p>
+                                <form class="form-horizontal">
+                                <div class="FormArrep">
+                                    <fieldset>
+                                    <legend class="FontCompras_Subtitles">Datos</legend>
+                                    <!-- Nombre-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="NombreArrep">Nombre</label>  
+                                        <div class="col-md-4">
+                                            <input id="NombreArrep" name="NombreArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Apellido-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="ApellidoArrep">Apellido</label>  
+                                        <div class="col-md-4">
+                                            <input id="ApellidoArrep" name="ApellidoArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Numero de Pedido-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="NumPedidoArrep">Número de Pedido</label>  
+                                        <div class="col-md-4">
+                                            <input id="NumPedidoArrep" name="NumPedidoArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Correo Electronico-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="CorreoArrep">Correo Electrónico</label>  
+                                        <div class="col-md-4">
+                                            <input id="CorreoArrep" name="CorreoArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Motivo -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="MotivoArrep">Motivo de Arrepentimiento</label>
+                                        <div class="col-md-4">
+                                            <select id="MotivoArrep" name="MotivoArrep" class="form-control">
+                                                <option value="Me arrepentí de la compra">Me arrepentí de la compra</option>
+                                                <option value="Quiero cambiar el producto">Quiero cambiar el producto</option>
+                                                <option value="No recibi el producto">No recibi el producto</option>
+                                                <option value="El producto no es lo que esperaba">El producto no es lo que esperaba</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Comentario -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="ComenArrep">Comentarios sobre la devolución</label>
+                                        <div class="col-md-6">                     
+                                            <textarea class="form-control" id="ComenArrep" name="ComenArrep">(Opcional)</textarea>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                    </div>
+                                    </form>                                    
+                                <!-- Fin del formulario -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary Font_btn" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary Font_btn" data-bs-dismiss="modal">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin modal -->
             </div>
             <div class="footer_redes col-xl-4 col-md-12">
                 <ul>

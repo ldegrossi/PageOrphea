@@ -37,9 +37,6 @@
                     <li class="header_nav_PagesBtn">
                         <a class="nav-link" href="./Ayuda.html">Ayuda</a>
                     </li>
-                    <li class="header_nav_PagesBtn">
-                        <a class="nav-link" href="./Mi Carro.html">Mi carro</a>
-                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Escribe..." aria-label="Search">
@@ -93,8 +90,83 @@
                 </ul>
             </div>
             <div class="footer_button col-xl-4 col-md-6">
-                <button type="button" class="btn btn-outline-light">Boton de Arrepentimiento</button>
-            </div>
+                <button type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Boton de Arrepentimiento</button>
+                <!-- Modal -->
+                <div class="modal fade FontCompras" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content bgCompras">
+                            <div class="modal-header">
+                                <h2 class="modal-title Form_Title" id="staticBackdropLabel">Botón de Arrepentimiento</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- formulario -->
+                                <legend class="FontCompras_Subtitles">Derecho de Arrepentimiento</legend>
+                                <p>Ley 24.240. Código Civil y Comercial de la República Argentina. El consumidor tiene derecho a revocar la presente operación comercial (por adquisición de cosas y/o prestación de servicios) durante el plazo de DIEZ (10) días corridos, contados a partir de la fecha en que se entregue la cosa o se celebre el contrato, lo último que ocurra, sin responsabilidad alguna. Esta facultad no puede ser dispensada ni renunciada. El consumidor comunicará fehacientemente dicha revocación al proveedor y pondrá la cosa a su disposición. Los gastos de devolución son por cuenta del proveedor. Para ejercer el derecho de revocación el consumidor deberá poner la cosa a disposición del vendedor sin haberla usado y manteniéndola en el mismo estado en que la recibió, debiendo restituir el proveedor al consumidor los importes recibidos</p>
+                                <form class="form-horizontal">
+                                <div class="FormArrep">
+                                    <fieldset>
+                                    <legend class="FontCompras_Subtitles">Datos</legend>
+                                    <!-- Nombre-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="NombreArrep">Nombre</label>  
+                                        <div class="col-md-4">
+                                            <input id="NombreArrep" name="NombreArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Apellido-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="ApellidoArrep">Apellido</label>  
+                                        <div class="col-md-4">
+                                            <input id="ApellidoArrep" name="ApellidoArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Numero de Pedido-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="NumPedidoArrep">Número de Pedido</label>  
+                                        <div class="col-md-4">
+                                            <input id="NumPedidoArrep" name="NumPedidoArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Correo Electronico-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="CorreoArrep">Correo Electrónico</label>  
+                                        <div class="col-md-4">
+                                            <input id="CorreoArrep" name="CorreoArrep" type="text" placeholder="" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Motivo -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="MotivoArrep">Motivo de Arrepentimiento</label>
+                                        <div class="col-md-4">
+                                            <select id="MotivoArrep" name="MotivoArrep" class="form-control">
+                                                <option value="Me arrepentí de la compra">Me arrepentí de la compra</option>
+                                                <option value="Quiero cambiar el producto">Quiero cambiar el producto</option>
+                                                <option value="No recibi el producto">No recibi el producto</option>
+                                                <option value="El producto no es lo que esperaba">El producto no es lo que esperaba</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Comentario -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="ComenArrep">Comentarios sobre la devolución</label>
+                                        <div class="col-md-6">                     
+                                            <textarea class="form-control" id="ComenArrep" name="ComenArrep">(Opcional)</textarea>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                    </div>
+                                    </form>                                    
+                                <!-- Fin del formulario -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary Font_btn" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary Font_btn" data-bs-dismiss="modal">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin modal -->            </div>
             <div class="footer_redes col-xl-4 col-md-12">
                 <ul>
                     <li><a href="#"><img src="../images/instagram_logo.png" alt="Instagram" class="btn_redes"></a></li>
