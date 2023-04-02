@@ -8,7 +8,7 @@
 /* NAV */
 .header_nav {
   display: flex;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(50, 50, 50);
 }
 .header_nav a {
   color: white;
@@ -25,8 +25,7 @@
 }
 .header_nav .header_nav_logo {
   width: 200px;
-  border-style: groove;
-  border-color: rgb(151, 151, 151);
+  background-color: rgb(70, 70, 70);
 }
 
 /*  HEADER COMPRAS */
@@ -124,7 +123,7 @@
 .footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(50, 50, 50);
   color: white;
   align-items: center;
   padding: 20px 0px 20px 0px;
@@ -178,6 +177,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 700px;
+  height: 300px;
 }
 .margin_ayuda .Img_Talles {
   display: flex;
@@ -186,8 +187,11 @@
 }
 .margin_ayuda .Img_Talles .Ayuda_Talles {
   border: solid 1px black;
-  width: 1000px;
-  height: 600px;
+  width: 700px;
+  height: 300px;
+}
+.margin_ayuda p {
+  margin-left: 5px;
 }
 
 /* NOSOTROS */
@@ -221,17 +225,22 @@
 }
 .div_productos .div_columna {
   flex-flow: column nowrap;
-  padding-left: 10px;
+  padding: 0px 10px 0px 10px;
 }
 .div_productos .div_columna input {
   height: 15px;
   width: 15px;
 }
-.div_productos .btn_productos {
+.div_productos .div_btnProductos {
   text-align: center;
-  width: 200px;
-  height: 80px;
+  padding-bottom: 15px;
+}
+.div_productos .div_btnProductos .btn_productos {
   font-size: medium;
+  width: 100px;
+  height: 60px;
+  font-size: 35px;
+  font-weight: bold;
 }
 .div_productos .aside_productos {
   text-align: center;
@@ -279,6 +288,52 @@
   background: #f3f3f3;
 }
 .div_productos .checkbox-rect input[type=checkbox]:checked + label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 0.2em;
+  border: 2px solid #fff;
+  transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: rgb(255, 162, 0);
+  box-shadow: 0 0 0 1px #000;
+}
+.div_productos .radio_productos input[type=radio] {
+  display: none;
+}
+.div_productos .radio_productos input[type=radio] + label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font: 35px/23px "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.div_productos .radio_productost input[type=radio]:hover + label:hover {
+  color: rgb(255, 184, 61);
+}
+.div_productos .radio_productos input[type=radio]:hover + label:before {
+  background: #50565a;
+  box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+.div_productos .radio_productos input[type=radio] + label:last-child {
+  margin-bottom: 5;
+}
+.div_productos .radio_productos input[type=radio] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  background: #f3f3f3;
+}
+.div_productos .radio_productos input[type=radio]:checked + label:before {
   width: 20px;
   height: 20px;
   border-radius: 0.2em;
@@ -491,12 +546,28 @@ h1 {
     height: 350px;
     width: 450px;
   }
-  .Ayuda_FP {
-    width: 50vw;
+  .margin_ayuda {
+    margin: 0px 100px 0px 100px;
   }
-  .Ayuda_Talles {
-    width: 450px;
-    height: 350px;
+  .margin_ayuda .Ayuda_FP {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+  }
+  .margin_ayuda .Img_Talles {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+  .margin_ayuda .Img_Talles .Ayuda_Talles {
+    border: solid 1px black;
+    width: 400px;
+    height: 200px;
+  }
+  .margin_ayuda p {
+    margin-left: 5px;
   }
   h1 {
     text-align: center;
@@ -528,6 +599,64 @@ h1 {
     font-weight: bold;
     font-size: 20px;
     background: rgba(117, 117, 117, 0.5);
+  }
+}
+@media (max-width: 576px) {
+  .margin_ayuda {
+    margin: 0px 100px 0px 100px;
+  }
+  .margin_ayuda .Ayuda_FP {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+  }
+  .margin_ayuda .Img_Talles {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+  .margin_ayuda .Img_Talles .Ayuda_Talles {
+    border: solid 1px black;
+    width: 200px;
+    height: 100px;
+  }
+  .margin_ayuda p {
+    margin-left: 5px;
+  }
+  .contacto_form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .contacto_map iframe {
+    height: 200px;
+    width: 250px;
+  }
+  .index_section_category {
+    margin: 0 30px 0 30px;
+    text-align: center;
+  }
+  .index_section_category p {
+    font-size: 60px;
+    position: relative;
+    color: white;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    filter: opacity(0);
+    bottom: 50%;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+  }
+  .index_section_category div {
+    padding: 0;
+  }
+  .index_section_category img {
+    width: 350px;
+    height: 300px;
   }
 }
 

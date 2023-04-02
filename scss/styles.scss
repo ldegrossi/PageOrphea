@@ -7,7 +7,7 @@ margin: 0;}
 
 .header_nav {
    display: flex;
-   background-color: rgb(58, 58, 58);
+   background-color: rgb(50, 50, 50);
    a{
       color: white;
       font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -23,8 +23,7 @@ margin: 0;}
    }
    .header_nav_logo {
       width: 200px;
-      border-style: groove;
-      border-color: rgb(151, 151, 151);
+      background-color: rgb(70, 70, 70);
    }
 }
 
@@ -128,7 +127,7 @@ margin: 0;}
 .footer {
    display: flex;
    justify-content: space-evenly;
-   background-color:  rgb(58, 58, 58); 
+   background-color:  rgb(50, 50, 50); 
    color: white;
    align-items: center;
    padding: 20px 0px 20px 0px ;
@@ -185,17 +184,21 @@ margin: 0;}
       display: block;
       margin-left: auto;
       margin-right: auto;
+      width: 700px;
+      height: 300px;
    }
-   
    .Img_Talles {
       display: flex; 
       flex-flow: column wrap;
       align-content: center;
       .Ayuda_Talles{       
          border: solid 1px black;
-         width: 1000px;
-         height: 600px;
+         width: 700px;
+         height: 300px;
       }
+   }
+   p {
+      margin-left: 5px;
    }
 }
 
@@ -230,18 +233,23 @@ margin: 0;}
    }
    .div_columna {
       flex-flow: column nowrap;
-      padding-left: 10px;
+      padding: 0px 10px 0px 10px;
       input{
          height: 15px;
          width: 15px;
       }
    }
-   .btn_productos{
-   text-align: center;
-   width: 200px;
-   height: 80px;
-   font-size: medium;
-   }
+   .div_btnProductos{
+      text-align: center;
+      padding-bottom: 15px;
+      .btn_productos{
+         font-size: medium;
+         width: 100px;
+         height: 60px;
+         font-size: 35px;
+         font-weight: bold;
+      }
+   }  
    .aside_productos {
       text-align: center;
       padding: 25px 25px 100px 25px;
@@ -297,7 +305,57 @@ margin: 0;}
       background: rgb(255, 162, 0);
       box-shadow: 0 0 0 1px #000;
    }
+
+
+   .radio_productos input[type="radio"] {
+      display: none;
+   }
+   .radio_productos input[type="radio"] + label {
+      display: block;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 20px;
+      font: 35px/23px 'Sofia Sans Extra Condensed', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+   }
+   .radio_productost input[type="radio"]:hover + label:hover {
+      color: rgb(255, 184, 61);
+   }
+   .radio_productos input[type="radio"]:hover + label:before {
+      background: #50565a;
+      box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+   }
+   .radio_productos input[type="radio"] + label:last-child {
+      margin-bottom: 5;
+   }
+   .radio_productos input[type="radio"] + label:before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #343a3f;
+      border-radius: 0.2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.2s, background 0.2s ease-in-out;
+      transition: all 0.2s, background 0.2s ease-in-out;
+      background: #f3f3f3;
+   }
+   .radio_productos input[type="radio"]:checked + label:before {
+      width: 20px;
+      height: 20px;
+      border-radius: 0.2em;
+      border: 2px solid #fff;
+      transform: rotate(90deg);
+      transform: rotate(90deg);
+      background: rgb(255, 162, 0);
+      box-shadow: 0 0 0 1px #000;
+   }
 }
+
+
 
 /* GENERAL */
 
@@ -515,13 +573,28 @@ h1 {
        width: 450px;
    }
 
-   .Ayuda_FP {
-       width: 50vw;
-   }
-
-   .Ayuda_Talles {
-       width: 450px;
-       height: 350px;
+   .margin_ayuda{
+      margin: 0px 100px 0px 100px;
+      .Ayuda_FP{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 400px;
+         height: 200px;
+      }
+      .Img_Talles {
+         display: flex; 
+         flex-flow: column wrap;
+         align-content: center;
+         .Ayuda_Talles{       
+            border: solid 1px black;
+            width: 400px;
+            height: 200px;
+         }
+      }
+      p {
+         margin-left: 5px;
+      }
    }
 
    h1{
@@ -560,3 +633,63 @@ h1 {
    }
 }
 
+@media (max-width: 576px) {
+   .margin_ayuda{
+      margin: 0px 100px 0px 100px;
+      .Ayuda_FP{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 200px;
+         height: 100px;
+      }
+      .Img_Talles {
+         display: flex; 
+         flex-flow: column wrap;
+         align-content: center;
+         .Ayuda_Talles{       
+            border: solid 1px black;
+            width: 200px;
+            height: 100px;
+         }
+      }
+      p {
+         margin-left: 5px;
+      }
+   }
+
+   .contacto_form {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+   }
+   .contacto_map iframe{   
+      height: 200px;
+      width: 250px;
+  }
+
+  .index_section_category{
+   margin: 0 30px 0 30px;
+   text-align: center;
+      p{
+         font-size: 60px;
+         position: relative;
+         color: white;
+         font-family: 'Sofia Sans Extra Condensed', sans-serif;
+         font-weight: bold;
+         filter: opacity(0);
+         bottom: 50%;
+         text-align: center;
+         text-shadow: 2px 2px 3px black;
+      }
+      div{
+         padding: 0;
+      }
+      img{
+         width: 350px;
+         height: 300px;
+      }
+   }
+}

@@ -16,8 +16,8 @@
     <header>
         <nav class="navbar navbar-expand-lg header_nav">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="../images/Logo 2.png" alt="Logo" class="header_nav_logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="../index.html"><img src="../images/Logo 2.png" alt="Logo" class="header_nav_logo"></a>
+              <button class="navbar-toggler header_nav_SearchBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -119,19 +119,10 @@
                                             <label class="radio-inline" for="Tarjeta-1">
                                                 <input type="radio" name="Tarjeta" id="Tarjeta-1" value="Master Card">
                                                 Master Card
-                                            </label> 
-                                            <label class="radio-inline" for="Tarjeta-2">
-                                                <input type="radio" name="Tarjeta" id="Tarjeta-2" value="Maestro">
-                                                Maestro
-                                            </label> 
+                                            </label> > 
                                             <label class="radio-inline" for="Tarjeta-3">
                                                 <input type="radio" name="Tarjeta" id="Tarjeta-3" value="American Express">
                                                 American Express
-                                            </label> 
-                                            <label class="radio-inline" for="Tarjeta-4">
-                                                <input type="radio" name="Tarjeta" id="Tarjeta-4" value="Cabal">
-                                                Cabal
-                                            </label>
                                         </div>
                                     </div>
                                     <!-- Numero de Tarjeta-->
@@ -232,19 +223,19 @@
                         <Fieldset>
                             <legend class="h3_general">Filtrar</legend>
                             <div class="div_columna">
-                                <div >     
+                                <div class="radio_productos">     
                                     <input type="radio" value="MasVendidos" name="Filtrar" id="MasVendidos">
                                     <label for="MasVendidos">Mas Vendidos</label>                   
                                 </div>
-                                <div>
+                                <div class="radio_productos">
                                     <input type="radio" value="MayorRelevancia" name="Filtrar" id="MayorRelevancia">
                                     <label for="MayorRelevancia">Mayor Relevancia</label>
                                 </div>
-                                <div>
+                                <div class="radio_productos">
                                     <input type="radio" value="MenorCosto" name="Filtrar" id="MenorCosto">
                                     <label for="MenorCosto">Menor Costo</label>
                                 </div>
-                                <div>
+                                <div class="radio_productos">
                                     <input type="radio" value="Promos" name="Filtrar" id="Promos">
                                     <label for="Promos">Promociones</label>
                                 </div>
@@ -279,10 +270,11 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <div class="btn_productos">
-                            <button type="button" class="btn btn-outline-light">Buscar</button>
+                        <div class="div_btnProductos">
+                            <button type="submit" class="btn_productos btn btn-outline-light">Buscar</button>
                         </div>
                     </div>
+
                 </form>
             </section>
             <aside class="bg_transparent">
@@ -428,7 +420,7 @@
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="ComenArrep">Comentarios sobre la devolución</label>
                                         <div class="col-md-6">                     
-                                            <textarea class="form-control" id="ComenArrep" name="ComenArrep">(Opcional)</textarea>
+                                            <textarea class="form-control" id="ComenArrep" name="ComenArrep"></textarea>
                                         </div>
                                     </div>
                                     </fieldset>
