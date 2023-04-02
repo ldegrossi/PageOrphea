@@ -88,14 +88,15 @@ margin: 0;}
 
 /* INDEX MARCAS */
 
-.marcas_img{
-   width: 250px;
-   height: 250px;
-   .div_marcas{
-      display: flex;
-      flex-flow: row wrap;
+.div_marcas{
+   display: flex;
+   flex-flow: row wrap;
+   .marcas_img{
+      width: 250px;
+      height: 250px;  
    }
 }
+
 
 
 /* INDEX PROMOCIONES */
@@ -691,5 +692,8 @@ h1 {
          width: 350px;
          height: 300px;
       }
+   }
+   .div_marcas{
+      text-align: center;
    }
 }
